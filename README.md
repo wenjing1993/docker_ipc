@@ -1,4 +1,4 @@
-# super-jingjing-journey
+# docker_ipc
 #### demo用于测试docker容器间的IPC通信
 
 1. run_share1.sh启动容器1，作为共享内存提供者(--ipc=shareable)
