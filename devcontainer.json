@@ -1,0 +1,5 @@
+{
+    "name": "dev_test",
+    "images": "ubuntu:18.04",
+    "runArgs": ["--name=wenjing_test"]
+}
