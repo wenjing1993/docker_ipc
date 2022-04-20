@@ -1,5 +1,20 @@
 {
     "name": "dev_test",
-    "images": "ubuntu:18.04",
-    "runArgs": ["--name=wenjing_test"]
+    "runArgs": [
+		"--name=docker_ipc",
+		"--cap-add=SYS_PTRACE",
+		"--security-opt",
+		"seccomp=unconfined"
+	],
+	"build": {
+		"dockerfile": "Dockerfile",
+		"args": {
+			"VARIANT": "debian-11"
+		}
+	},
+	"extensions": [
+		"ms-vscode.cpptools",
+		"ms-vscode.cmake-tools"
+	],
+	"remoteUser": "vscode"
 }
